@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://da1um4djoyp05"]
+
+[ext_resource type="Script" path="res://Script/inventory_item.gd" id="1_kce71"]
+[ext_resource type="Texture2D" uid="uid://cpsjaebpas6w4" path="res://Assets/Icons/icon1.png" id="2_8yn7a"]
+
+[node name="Inventory_Item" type="Node2D" groups=["Items"]]
+script = ExtResource("1_kce71")
+item_type = null
+item_name = null
+item_effect = null
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+[node name="Icon1" type="Sprite2D" parent="Area2D"]
+position = Vector2(4.54747e-13, -2)
+scale = Vector2(1.53125, 1.40625)
+texture = ExtResource("2_8yn7a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
